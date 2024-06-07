@@ -5,13 +5,14 @@ FROM node:20-alpine
 WORKDIR /usr/src/app
 
 # 复制 package.json 和 package-lock.json
-COPY . .
+COPY package*.json ./
 
 RUN npm config set registry https://registry.npmmirror.com
 # 安装项目依赖
 RUN npm install
 
 # 复制项目文件
+COPY . .
 
 # 暴露应用端口
 EXPOSE 3000
