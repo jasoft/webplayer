@@ -13,6 +13,7 @@ RUN npm install
 
 # 复制项目文件
 COPY . .
+# 安装 ffmpeg
 
 # 暴露应用端口
 EXPOSE 3000

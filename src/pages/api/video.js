@@ -47,21 +47,14 @@ export default async function handler(req, res) {
   const videoJson = path.join(videoDir, "videos.json")
   res.setHeader("Content-Type", "application/json")
 
-  // 如果视频数据文件存在且是今天的数据，直接返回数据
-  if (fs.existsSync(videoJson)) {
-    const stats = fs.statSync(videoJson)
-    const jsonDate = new Date(stats.mtime)
-    const today = new Date()
-    if (jsonDate.toDateString() === today.toDateString()) {
-      const videosData = fs.readFileSync(videoJson, "utf-8")
-      const videos = JSON.parse(videosData)
-      res.status(200).json(videos)
-      return
-    }
+  // 如果视频数据文件不存在，重新扫描视频文件夹，生成视频数据文件
+  if (!fs.existsSync(videoJson)) {
+    const videos = await scanVideos()
+    fs.writeFileSync(videoJson, JSON.stringify(videos, null, 2))
   }
 
-  // 否则重新扫描视频文件夹，生成视频数据文件
-  const videos = await scanVideos()
-  fs.writeFileSync(videoJson, JSON.stringify(videos, null, 2))
-  res.status(200).json(videos)
+  const videosData = fs.readFileSync(videoJson, "utf-8")
+  const videosJson = JSON.parse(videosData)
+  res.status(200).json(videosJson)
+  return
 }
