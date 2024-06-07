@@ -7,18 +7,23 @@ export default async function handler(req, res) {
   const listname = req.query.listname
   function getVideoDuration(filePath) {
     return new Promise((resolve, reject) => {
-      ffmpeg.ffprobe(filePath, (err, metadata) => {
-        if (err) {
-          reject(err)
-        } else {
-          const duration = metadata.format.duration || 0
-          const hours = Math.floor(duration / 3600)
-          const minutes = Math.floor((duration % 3600) / 60)
-          const seconds = Math.floor(duration % 60)
-          const formattedDuration = `${hours.toString().padStart(2, "0")}:${minutes.toString().padStart(2, "0")}`
-          resolve(formattedDuration)
-        }
-      })
+      try {
+        ffmpeg.ffprobe(filePath, (err, metadata) => {
+          if (err) {
+            reject(err)
+          } else {
+            const duration = metadata.format.duration || 0
+            const hours = Math.floor(duration / 3600)
+            const minutes = Math.floor((duration % 3600) / 60)
+            const seconds = Math.floor(duration % 60)
+            const formattedDuration = `${hours.toString().padStart(2, "0")}:${minutes.toString().padStart(2, "0")}`
+            resolve(formattedDuration)
+          }
+        })
+      } catch (error) {
+        console.error(error)
+        reject(error)
+      }
     })
   }
 
@@ -29,7 +34,15 @@ export default async function handler(req, res) {
     for (const file of files) {
       if (path.extname(file) === ".mkv" || path.extname(file) === ".mp4") {
         const filePath = path.join(videoDir, file)
-        const duration = await getVideoDuration(filePath)
+        let duration = "00:00"
+        try {
+          duration = await getVideoDuration(filePath)
+        } catch (error) {
+          console.error(
+            "Error getting video duration, set default duration",
+            error,
+          )
+        }
         const videoData = {
           filename: file,
           caption: path.basename(file, path.extname(file)),
