@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  app:
+    build: .
+    ports:
+      - "985:3000"
+    volumes:
+      - /volume1/TV/courses:/usr/src/app/public/videos
+      - .:/usr/src/app
+    command: npm run dev
