@@ -7,4 +7,6 @@ services:
       - "9850:3000"
     volumes:
       - /volume1/TV/网课:/usr/src/app/public/videos
+      - .:/usr/src/app
+      - ./node_modules
     command: npm run dev
