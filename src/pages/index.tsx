@@ -1,6 +1,6 @@
 import Head from "next/head"
 import SimpleVideoPlayer from "./player"
-import ChatBot from "../components/ChatBot"
+import ChatBot from "~/components/chatbot"
 export default () => (
   <>
     <Head>
