@@ -37,7 +37,7 @@
     "**/*.cjs",
     "**/*.js",
     ".next/types/**/*.ts",
-    "src/pages/list.jsx",
+    "src/pages/player.jsx",
     "next.config.mjs"
   ],
   "exclude": ["node_modules"]

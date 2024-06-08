@@ -44,19 +44,16 @@ export default function SimpleVideoPlayer({ listname }) {
           </div>
         ))}
       </div>
-      <div className="w-3/4 overflow-y-auto p-4">
-        <h1 className="pb-3 text-center text-6xl">王家 985 网课学习系统</h1>
+      <div className="w-3/4 overflow-y-auto">
+        <div className="p-2 pb-4 pt-4 text-4xl">{currentVideo?.caption}</div>
         <video
           ref={videoRef}
           id="videoPlayer"
           controls
           src={videoSrc}
           onCanPlay={handleCanPlay}
-          className="w-full"
+          className="w-full p-2"
         ></video>
-        <div className="pt-4 text-4xl">
-          {currentVideo?.caption} - {currentVideo?.duration}
-        </div>
       </div>
     </div>
   )
