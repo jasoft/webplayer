@@ -9,4 +9,4 @@ services:
       - /volume1/TV/网课:/usr/src/app/public/videos
       - .:/usr/src/app
       - /usr/src/app/node_modules
-    command: npm run dev
+    command: sh -c "npm run build && npm run start"
