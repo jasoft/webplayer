@@ -32,6 +32,7 @@ export default function SimpleVideoPlayer({ listname }) {
   const handleCanPlay = () => {
     if (videoRef.current) {
       videoRef.current.play()
+      console.log("playing video")
     }
   }
 
