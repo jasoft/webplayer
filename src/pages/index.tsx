@@ -22,6 +22,24 @@ export default () => (
       <meta name="msapplication-TileImage" content="/mstile-144x144.png" />
       <meta name="msapplication-navbutton-color" content="#000000" />
       <meta name="apple-mobile-web-app-status-bar-style" />
+
+      {/* Google Tag Manager */}
+      <script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=G-6S359M66FH"
+      ></script>
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-6S359M66FH');
+          `,
+        }}
+      />
+      {/* End Google Tag Manager */}
     </Head>
 
     <div className="flex justify-between">
@@ -30,7 +48,7 @@ export default () => (
       </div>
 
       <div className="w-1/4 border-l border-dotted border-gray-500 ">
-        <ChatBot />
+        AI 升级中，请稍后再试
       </div>
     </div>
   </>
