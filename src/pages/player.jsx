@@ -7,6 +7,7 @@ export default function SimpleVideoPlayer({ listname }) {
   const [videoSrc, setVideoSrc] = useState("")
   const [currentVideo, setCurrentVideo] = useState(null)
   const videoRef = useRef()
+  let playStartTime = 0 // 记录播放开始时间
 
   useEffect(() => {
     axios
@@ -24,6 +25,10 @@ export default function SimpleVideoPlayer({ listname }) {
     else setVideoSrc(path.join("/videos", listname, video.filename))
     setCurrentVideo(video)
     // 更新点击次数
+    window.dataLayer.push({
+      event: "videoClick",
+      videoName: video.caption,
+    })
     const clicks = JSON.parse(localStorage.getItem("videoClicks") || "{}")
     clicks[video.filename] = (clicks[video.filename] || 0) + 1
     localStorage.setItem("videoClicks", JSON.stringify(clicks))
@@ -35,6 +40,32 @@ export default function SimpleVideoPlayer({ listname }) {
       console.log("playing video")
     }
   }
+  // 监听视频播放和暂停事件
+  useEffect(() => {
+    const videoElement = videoRef.current
+    if (!videoElement) return
+
+    const handlePlay = () => {
+      playStartTime = Date.now() // 记录播放开始时间
+    }
+
+    const handlePause = () => {
+      const playTime = Date.now() - playStartTime // 计算播放时间
+      window.dataLayer.push({
+        event: "videoPause",
+        videoName: currentVideo ? currentVideo.caption : "",
+        playTime: playTime,
+      })
+    }
+
+    videoElement.addEventListener("play", handlePlay)
+    videoElement.addEventListener("pause", handlePause)
+
+    return () => {
+      videoElement.removeEventListener("play", handlePlay)
+      videoElement.removeEventListener("pause", handlePause)
+    }
+  }, [currentVideo])
 
   return (
     <div className="flex h-screen">
