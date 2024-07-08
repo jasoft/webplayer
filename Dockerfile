@@ -10,6 +10,7 @@ COPY package*.json ./
 RUN npm config set registry https://registry.npmmirror.com
 # 安装项目依赖
 RUN npm install
+RUN npm i groq-sdk
 
 # 复制项目文件
 COPY . .
