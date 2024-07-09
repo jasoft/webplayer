@@ -5,17 +5,17 @@ import { useRouter } from "next/router"
 import { useEffect } from "react"
 
 export default function HomePage() {
-    const router = useRouter()
+    //    const router = useRouter()
 
-    useEffect(() => {
-        if (!router.isReady) return
-        // 检查 URL 查询参数中的 id
-        if (router.query.id !== "wzh922") {
-            // 如果 id 不是 wzh922，可以重定向或显示错误
-            // 例如，重定向到首页
-            router.push("/404")
-        }
-    }, [router, router.isReady])
+    // useEffect(() => {
+    //     if (!router.isReady) return
+    //     // 检查 URL 查询参数中的 id
+    //     if (router.query.id !== "wzh922") {
+    //         // 如果 id 不是 wzh922，可以重定向或显示错误
+    //         // 例如，重定向到首页
+    //         router.push("/404")
+    //     }
+    // }, [router, router.isReady])
     return (
         <>
             <Head>

@@ -3,7 +3,25 @@ import axios from "axios"
 import path from "path"
 import { PageTimeTracker } from "~/components/pagetime"
 import Link from "next/link"
-
+import Image from "next/image"
+function BooksSection() {
+    return (
+        <div className="inline-block">
+            <Link
+                href="https://soj.myds.me:5011/books/2024版《高中知识清单》数学（新教材版）.pdf"
+                target="_blank"
+                className="flex cursor-pointer items-center rounded-lg border-none bg-transparent p-2 outline-none transition-shadow duration-300 ease-in-out hover:shadow-lg"
+            >
+                <Image
+                    src="https://soj.myds.me:5011/books/2024版《高中知识清单》数学（新教材版）.png"
+                    width={128}
+                    height={128}
+                    className="rounded-lg shadow-xl"
+                />
+            </Link>
+        </div>
+    )
+}
 function HelpSection() {
     const [resultMessage, setResultMessage] = useState("")
 
@@ -26,16 +44,22 @@ function HelpSection() {
     return (
         <>
             <div className="p-2 text-lg text-gray-500">
-                如需帮助，请联系爸爸.
+                参考资料书目可以点击查看PDF。如需帮助，请
                 <button
-                    className="ml-2 mr-2 rounded bg-blue-500 px-4 py-2 font-bold text-white hover:bg-blue-700"
+                    className="rounded bg-blue-500 px-4 py-2 font-bold text-white hover:bg-blue-700"
                     onClick={requestForHelp}
                 >
                     点这里
                 </button>
                 发送一条消息给爸爸。
             </div>
-            <div className="p-2 text-lg text-red-500">{resultMessage}</div>
+            {resultMessage && (
+                <p
+                    className={`mt-2 p-2 text-sm font-semibold ${resultMessage.includes("失败") ? "text-red-500" : "text-green-500"}`}
+                >
+                    {resultMessage}
+                </p>
+            )}
         </>
     )
 }
@@ -145,7 +169,7 @@ export default function SimpleVideoPlayer({ listname }) {
                     )
                 })}
             </div>
-            <div className="w-3/4 overflow-y-auto">
+            <div className="w-3/4 overflow-y-auto p-2">
                 <div className="p-2 pb-4 pt-4 text-4xl">
                     {currentVideo?.caption}
                 </div>
@@ -164,14 +188,8 @@ export default function SimpleVideoPlayer({ listname }) {
                 <h3 className="p-2 text-2xl font-bold text-gray-700">
                     参考资料
                 </h3>
-                <div className="p-2 text-lg text-blue-500 underline">
-                    <Link
-                        href="https://soj.myds.me:5011/books/2024%E7%89%88%E3%80%8A%E9%AB%98%E4%B8%AD%E7%9F%A5%E8%AF%86%E6%B8%85%E5%8D%95%E3%80%8B%E6%95%B0%E5%AD%A6%EF%BC%88%E6%96%B0%E6%95%99%E6%9D%90%E7%89%88%EF%BC%89.pdf"
-                        target="_blank"
-                    >
-                        知识清单（数学）
-                    </Link>
-                </div>
+                <BooksSection />
+                <h3 className="p-2 text-2xl font-bold text-gray-700">帮助</h3>
                 <HelpSection />
             </div>
         </div>

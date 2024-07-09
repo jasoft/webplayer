@@ -18,6 +18,10 @@ const config = {
         defaultLocale: "en",
     },
     transpilePackages: ["geist"],
+
+    images: {
+        domains: ["soj.myds.me"],
+    },
 }
 
 export default config
