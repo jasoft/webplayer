@@ -194,10 +194,11 @@ export default function SimpleVideoPlayer({ listname }) {
                     onCanPlay={handleCanPlay}
                     className="w-full p-2"
                 ></video>
-                <div className="p-2 text-lg text-gray-500">
-                    今天学习时间：
+                <div className="p-2 text-lg text-gray-700">
+                    学习时间：
                     <PageTimeTracker isPlaying={isPlaying} />
                 </div>
+
                 <h3 className="p-2 text-2xl font-bold text-gray-700">
                     参考资料
                 </h3>
