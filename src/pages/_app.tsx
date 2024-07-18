@@ -1,7 +1,6 @@
 import { GeistSans } from "geist/font/sans"
 import { type AppType } from "next/app"
-import { useEffect } from "react"
-import { useRouter } from "next/router"
+
 import Script from "next/script"
 
 import "~/styles/globals.css"

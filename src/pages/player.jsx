@@ -4,6 +4,10 @@ import path from "path"
 import { PageTimeTracker } from "~/components/pagetime"
 import Link from "next/link"
 import Image from "next/image"
+import { formatDistanceToNow } from "date-fns"
+
+import { zhCN } from "date-fns/locale"
+
 function BooksSection() {
     return (
         <div className="inline-block">
@@ -119,6 +123,11 @@ export default function SimpleVideoPlayer({ listname }) {
         const clicks = JSON.parse(localStorage.getItem("videoClicks") || "{}")
         clicks[video.filename] = (clicks[video.filename] || 0) + 1
         localStorage.setItem("videoClicks", JSON.stringify(clicks))
+
+        const lastPlayTime =
+            JSON.parse(localStorage.getItem("lastPlayTime")) || {}
+        lastPlayTime[video.filename] = Date.now()
+        localStorage.setItem("lastPlayTime", JSON.stringify(lastPlayTime))
     }
 
     const handleCanPlay = () => {
@@ -168,6 +177,11 @@ export default function SimpleVideoPlayer({ listname }) {
                     )
                     const clickCount = clicks[video.filename] || 0
 
+                    const lastPlayTime = JSON.parse(
+                        localStorage.getItem("lastPlayTime") || "{}",
+                    )
+                    const lastPlay = lastPlayTime[video.filename] || null
+
                     return (
                         <div
                             key={video.filename}
@@ -175,8 +189,13 @@ export default function SimpleVideoPlayer({ listname }) {
                             className={`cursor-pointer py-2 ${currentVideo === video ? "bg-blue-200" : clickCount > 0 ? "bg-green-200" : "hover:bg-gray-200"}`}
                         >
                             {video.caption}{" "}
-                            <span className="text-gray-500">
-                                ({clickCount})
+                            <span className="text-xs text-gray-500">
+                                {lastPlay
+                                    ? `${formatDistanceToNow(lastPlay, {
+                                          addSuffix: true,
+                                          locale: zhCN,
+                                      })}`
+                                    : ""}
                             </span>
                         </div>
                     )
