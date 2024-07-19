@@ -6,7 +6,6 @@ services:
         ports:
             - "9850:3000"
         volumes:
-            - /volume1/TV/网课:/usr/src/app/public/videos
             - .:/usr/src/app
             - /usr/src/app/node_modules
-        command: sh -c "npm run build && npm run start"
+        command: sh -c "npm i && npm run build && npm run start"
