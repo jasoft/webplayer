@@ -5,6 +5,27 @@ import ffmpeg from "fluent-ffmpeg"
 export default async function handler(req, res) {
     // 指定视频文件所在的目录
     const listname = req.query.listname
+
+    const videoJson = path.join(
+        process.cwd(),
+        "public",
+        "videos",
+        listname,
+        "videos.json",
+    )
+    res.setHeader("Content-Type", "application/json")
+
+    const videosData = fs.readFileSync(videoJson, "utf-8")
+    let videosJson = JSON.parse(videosData)
+    videosJson.forEach((video) => {
+        video.url = `${process.env.MEDIA_URL_PREFIX}/${listname}/${video.filename}`
+    })
+    res.status(200).json(videosJson)
+    console.log(videosJson)
+    return
+}
+
+export async function createVideoJson(listname) {
     function getVideoDuration(filePath) {
         return new Promise((resolve, reject) => {
             try {
@@ -68,9 +89,4 @@ export default async function handler(req, res) {
         const videos = await scanVideos()
         fs.writeFileSync(videoJson, JSON.stringify(videos, null, 2))
     }
-
-    const videosData = fs.readFileSync(videoJson, "utf-8")
-    const videosJson = JSON.parse(videosData)
-    res.status(200).json(videosJson)
-    return
 }

@@ -7,7 +7,8 @@
         "build": "next build",
         "dev": "next dev -H 0.0.0.0",
         "lint": "next lint",
-        "start": "next start"
+        "start": "next start",
+        "deploy": "ssh root@ds.home 'bash -l -c \"cd /volume1/docker/webplayer &&  ./deploy.sh\"'"
     },
     "dependencies": {
         "@t3-oss/env-nextjs": "^0.10.1",

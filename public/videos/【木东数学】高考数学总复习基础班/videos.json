@@ -1,0 +1,632 @@
+[
+  {
+    "filename": "001 区间的表示.mp4",
+    "caption": "001 区间的表示",
+    "duration": "00:28"
+  },
+  {
+    "filename": "002 常见不等式的解法——一元一次不等式（组）.mp4",
+    "caption": "002 常见不等式的解法——一元一次不等式（组）",
+    "duration": "00:34"
+  },
+  {
+    "filename": "003 常见不等式的解法——一元二次不等式.mp4",
+    "caption": "003 常见不等式的解法——一元二次不等式",
+    "duration": "00:57"
+  },
+  {
+    "filename": "004 常见不等式的解法——分式不等式解法.mp4",
+    "caption": "004 常见不等式的解法——分式不等式解法",
+    "duration": "00:26"
+  },
+  {
+    "filename": "005 常见不等式的解法——绝对值不等式解法.mp4",
+    "caption": "005 常见不等式的解法——绝对值不等式解法",
+    "duration": "00:28"
+  },
+  {
+    "filename": "006 复数第一讲.mp4",
+    "caption": "006 复数第一讲",
+    "duration": "00:49"
+  },
+  {
+    "filename": "007 复数第二讲.mp4",
+    "caption": "007 复数第二讲",
+    "duration": "00:24"
+  },
+  {
+    "filename": "008 元素与集合.mp4",
+    "caption": "008 元素与集合",
+    "duration": "00:46"
+  },
+  {
+    "filename": "009 集合的运算——交集.mp4",
+    "caption": "009 集合的运算——交集",
+    "duration": "00:32"
+  },
+  {
+    "filename": "010 集合的运算——并集、补集.mp4",
+    "caption": "010 集合的运算——并集、补集",
+    "duration": "00:32"
+  },
+  {
+    "filename": "011 集合的运算——交并补综合运算.mp4",
+    "caption": "011 集合的运算——交并补综合运算",
+    "duration": "00:13"
+  },
+  {
+    "filename": "012 集合的运算——集合的关系.mp4",
+    "caption": "012 集合的运算——集合的关系",
+    "duration": "00:55"
+  },
+  {
+    "filename": "013 基本初等函数都长啥样.mp4",
+    "caption": "013 基本初等函数都长啥样",
+    "duration": "00:38"
+  },
+  {
+    "filename": "014 充分必要条件.mp4",
+    "caption": "014 充分必要条件",
+    "duration": "01:03"
+  },
+  {
+    "filename": "015 全称量词与存在量词命题.mp4",
+    "caption": "015 全称量词与存在量词命题",
+    "duration": "00:36"
+  },
+  {
+    "filename": "016 不等式性质与基本不等式概念.mp4",
+    "caption": "016 不等式性质与基本不等式概念",
+    "duration": "00:35"
+  },
+  {
+    "filename": "017 基本不等式的直接应用.mp4",
+    "caption": "017 基本不等式的直接应用",
+    "duration": "00:25"
+  },
+  {
+    "filename": "018 不等式常数1的代换第一讲.mp4",
+    "caption": "018 不等式常数1的代换第一讲",
+    "duration": "00:40"
+  },
+  {
+    "filename": "019 基本不等式——常数1的代换第二讲.mp4",
+    "caption": "019 基本不等式——常数1的代换第二讲",
+    "duration": "00:20"
+  },
+  {
+    "filename": "020 基本不等式一次型配凑定值.mp4",
+    "caption": "020 基本不等式一次型配凑定值",
+    "duration": "00:26"
+  },
+  {
+    "filename": "021 基本不等式——头重脚轻最值问题.mp4",
+    "caption": "021 基本不等式——头重脚轻最值问题",
+    "duration": "00:18"
+  },
+  {
+    "filename": "022 一元二次不等式韦达定理逆用.mp4",
+    "caption": "022 一元二次不等式韦达定理逆用",
+    "duration": "00:10"
+  },
+  {
+    "filename": "023 函数的基本概念.mp4",
+    "caption": "023 函数的基本概念",
+    "duration": "00:34"
+  },
+  {
+    "filename": "024 函数定义域问题.mp4",
+    "caption": "024 函数定义域问题",
+    "duration": "00:22"
+  },
+  {
+    "filename": "025 待定系数法求解析式.mp4",
+    "caption": "025 待定系数法求解析式",
+    "duration": "00:31"
+  },
+  {
+    "filename": "026 换元法求解析式.mp4",
+    "caption": "026 换元法求解析式",
+    "duration": "00:18"
+  },
+  {
+    "filename": "027 分段函数.mp4",
+    "caption": "027 分段函数",
+    "duration": "00:32"
+  },
+  {
+    "filename": "028 函数单调性的判断.mp4",
+    "caption": "028 函数单调性的判断",
+    "duration": "00:18"
+  },
+  {
+    "filename": "029 利用图像求函数单调区间.mp4",
+    "caption": "029 利用图像求函数单调区间",
+    "duration": "00:32"
+  },
+  {
+    "filename": "030 已知单调性求参数范围.mp4",
+    "caption": "030 已知单调性求参数范围",
+    "duration": "00:14"
+  },
+  {
+    "filename": "031 分段函数单调性.mp4",
+    "caption": "031 分段函数单调性",
+    "duration": "00:17"
+  },
+  {
+    "filename": "032 根据单调性解不等式.mp4",
+    "caption": "032 根据单调性解不等式",
+    "duration": "00:08"
+  },
+  {
+    "filename": "033 导数基本运算公式.mp4",
+    "caption": "033 导数基本运算公式",
+    "duration": "00:49"
+  },
+  {
+    "filename": "034 导数简单应用——单调性问题.mp4",
+    "caption": "034 导数简单应用——单调性问题",
+    "duration": "00:19"
+  },
+  {
+    "filename": "035 导数简单应用——切线方程.mp4",
+    "caption": "035 导数简单应用——切线方程",
+    "duration": "00:31"
+  },
+  {
+    "filename": "036 函数极值与最值.mp4",
+    "caption": "036 函数极值与最值",
+    "duration": "00:40"
+  },
+  {
+    "filename": "037 函数的奇偶性第一讲——奇偶性的判断.mp4",
+    "caption": "037 函数的奇偶性第一讲——奇偶性的判断",
+    "duration": "00:28"
+  },
+  {
+    "filename": "038 利用奇偶性求参数.mp4",
+    "caption": "038 利用奇偶性求参数",
+    "duration": "00:26"
+  },
+  {
+    "filename": "039 根据奇偶性求解析式.mp4",
+    "caption": "039 根据奇偶性求解析式",
+    "duration": "00:26"
+  },
+  {
+    "filename": "040 利用奇偶性解不等式.mp4",
+    "caption": "040 利用奇偶性解不等式",
+    "duration": "00:24"
+  },
+  {
+    "filename": "041 函数性质的综合应用.mp4",
+    "caption": "041 函数性质的综合应用",
+    "duration": "00:35"
+  },
+  {
+    "filename": "042 奇常模型的应用.mp4",
+    "caption": "042 奇常模型的应用",
+    "duration": "00:30"
+  },
+  {
+    "filename": "043 指对运算.mp4",
+    "caption": "043 指对运算",
+    "duration": "00:38"
+  },
+  {
+    "filename": "044 指对函数.mp4",
+    "caption": "044 指对函数",
+    "duration": "00:12"
+  },
+  {
+    "filename": "045 三角函数概念第一讲任意角和弧度制.mp4",
+    "caption": "045 三角函数概念第一讲任意角和弧度制",
+    "duration": "00:41"
+  },
+  {
+    "filename": "046 三角函数的概念第二讲.mp4",
+    "caption": "046 三角函数的概念第二讲",
+    "duration": "00:28"
+  },
+  {
+    "filename": "047 同角三角函数问题.mp4",
+    "caption": "047 同角三角函数问题",
+    "duration": "00:33"
+  },
+  {
+    "filename": "048 sina+cosa，sinacosa的应用.mp4",
+    "caption": "048 sina+cosa，sinacosa的应用",
+    "duration": "00:31"
+  },
+  {
+    "filename": "049 三角函数诱导公式.mp4",
+    "caption": "049 三角函数诱导公式",
+    "duration": "00:50"
+  },
+  {
+    "filename": "050 诱导公式第二讲——间接考察.mp4",
+    "caption": "050 诱导公式第二讲——间接考察",
+    "duration": "00:31"
+  },
+  {
+    "filename": "051 三角函数图像.mp4",
+    "caption": "051 三角函数图像",
+    "duration": "00:18"
+  },
+  {
+    "filename": "052 三角恒等变换解答专项.mp4",
+    "caption": "052 三角恒等变换解答专项",
+    "duration": "00:57"
+  },
+  {
+    "filename": "053 三角函数图像应用——利用图像法求值域.mp4",
+    "caption": "053 三角函数图像应用——利用图像法求值域",
+    "duration": "00:30"
+  },
+  {
+    "filename": "054 三角函数图像应用——换元法求值域.mp4",
+    "caption": "054 三角函数图像应用——换元法求值域",
+    "duration": "00:16"
+  },
+  {
+    "filename": "055 三角函数图像应用——单调性问题.mp4",
+    "caption": "055 三角函数图像应用——单调性问题",
+    "duration": "00:50"
+  },
+  {
+    "filename": "056 三角函数图像变换.mp4",
+    "caption": "056 三角函数图像变换",
+    "duration": "00:25"
+  },
+  {
+    "filename": "057 三角函数的奇偶性与对称性.mp4",
+    "caption": "057 三角函数的奇偶性与对称性",
+    "duration": "00:42"
+  },
+  {
+    "filename": "058 根据图像求解析式.mp4",
+    "caption": "058 根据图像求解析式",
+    "duration": "00:29"
+  },
+  {
+    "filename": "059 三角恒等变换小题角的配凑.mp4",
+    "caption": "059 三角恒等变换小题角的配凑",
+    "duration": "00:15"
+  },
+  {
+    "filename": "060 三角恒等变换小题换元法的应用.mp4",
+    "caption": "060 三角恒等变换小题换元法的应用",
+    "duration": "00:14"
+  },
+  {
+    "filename": "061 三角函数零点.mp4",
+    "caption": "061 三角函数零点",
+    "duration": "00:51"
+  },
+  {
+    "filename": "062 函数图像识别.mp4",
+    "caption": "062 函数图像识别",
+    "duration": "00:46"
+  },
+  {
+    "filename": "063 平面向量基本概念及坐标表示.mp4",
+    "caption": "063 平面向量基本概念及坐标表示",
+    "duration": "00:33"
+  },
+  {
+    "filename": "064 平面向量基本定理.mp4",
+    "caption": "064 平面向量基本定理",
+    "duration": "00:46"
+  },
+  {
+    "filename": "065 向量的数量积.mp4",
+    "caption": "065 向量的数量积",
+    "duration": "00:22"
+  },
+  {
+    "filename": "066 向量模长与夹角.mp4",
+    "caption": "066 向量模长与夹角",
+    "duration": "00:39"
+  },
+  {
+    "filename": "067 解三角基本公式以及正弦定理的应用边化角.mp4",
+    "caption": "067 解三角基本公式以及正弦定理的应用边化角",
+    "duration": "00:42"
+  },
+  {
+    "filename": "068 正弦定理应用边化角例题补充.mp4",
+    "caption": "068 正弦定理应用边化角例题补充",
+    "duration": "00:30"
+  },
+  {
+    "filename": "069 正弦定理的应用角化边.mp4",
+    "caption": "069 正弦定理的应用角化边",
+    "duration": "00:33"
+  },
+  {
+    "filename": "070 余弦定理的应用.mp4",
+    "caption": "070 余弦定理的应用",
+    "duration": "00:38"
+  },
+  {
+    "filename": "071 边长范围问题.mp4",
+    "caption": "071 边长范围问题",
+    "duration": "00:50"
+  },
+  {
+    "filename": "072 三角形面积最值问题.mp4",
+    "caption": "072 三角形面积最值问题",
+    "duration": "00:21"
+  },
+  {
+    "filename": "073 多三角形问题.mp4",
+    "caption": "073 多三角形问题",
+    "duration": "00:31"
+  },
+  {
+    "filename": "074 中线问题.mp4",
+    "caption": "074 中线问题",
+    "duration": "00:32"
+  },
+  {
+    "filename": "075 等差数列基本量计算.mp4",
+    "caption": "075 等差数列基本量计算",
+    "duration": "00:41"
+  },
+  {
+    "filename": "076 等差数列前n项和最值.mp4",
+    "caption": "076 等差数列前n项和最值",
+    "duration": "00:22"
+  },
+  {
+    "filename": "077 等比数列基本量的计算.mp4",
+    "caption": "077 等比数列基本量的计算",
+    "duration": "00:45"
+  },
+  {
+    "filename": "078 特殊值法解决等差等比数列小题.mp4",
+    "caption": "078 特殊值法解决等差等比数列小题",
+    "duration": "00:09"
+  },
+  {
+    "filename": "079 公式法、递推法求通项.mp4",
+    "caption": "079 公式法、递推法求通项",
+    "duration": "00:46"
+  },
+  {
+    "filename": "080 倒数法、构造法求通项.mp4",
+    "caption": "080 倒数法、构造法求通项",
+    "duration": "00:20"
+  },
+  {
+    "filename": "081 累加、累乘、待定系数法求通项公式.mp4",
+    "caption": "081 累加、累乘、待定系数法求通项公式",
+    "duration": "00:32"
+  },
+  {
+    "filename": "082 等差等比数列证明.mp4",
+    "caption": "082 等差等比数列证明",
+    "duration": "00:24"
+  },
+  {
+    "filename": "083 裂项相消求和.mp4",
+    "caption": "083 裂项相消求和",
+    "duration": "00:41"
+  },
+  {
+    "filename": "084 数列错位相减求和.mp4",
+    "caption": "084 数列错位相减求和",
+    "duration": "00:38"
+  },
+  {
+    "filename": "085 数列分组求和.mp4",
+    "caption": "085 数列分组求和",
+    "duration": "00:23"
+  },
+  {
+    "filename": "086 立体几何简单的数学语言转化及体积表面积公式.mp4",
+    "caption": "086 立体几何简单的数学语言转化及体积表面积公式",
+    "duration": "00:17"
+  },
+  {
+    "filename": "087 线面平行证明中位线法.mp4",
+    "caption": "087 线面平行证明中位线法",
+    "duration": "00:35"
+  },
+  {
+    "filename": "088 线面平行证明平行四边形法.mp4",
+    "caption": "088 线面平行证明平行四边形法",
+    "duration": "00:31"
+  },
+  {
+    "filename": "089 面面平行证明.mp4",
+    "caption": "089 面面平行证明",
+    "duration": "00:19"
+  },
+  {
+    "filename": "090 线面垂直证明方法讲解.mp4",
+    "caption": "090 线面垂直证明方法讲解",
+    "duration": "00:24"
+  },
+  {
+    "filename": "091 线面垂直证明例题.mp4",
+    "caption": "091 线面垂直证明例题",
+    "duration": "00:48"
+  },
+  {
+    "filename": "092 面面垂直证明.mp4",
+    "caption": "092 面面垂直证明",
+    "duration": "00:40"
+  },
+  {
+    "filename": "093 立体几何定理公理的判定.mp4",
+    "caption": "093 立体几何定理公理的判定",
+    "duration": "00:24"
+  },
+  {
+    "filename": "094 空间坐标系的建立及坐标书写.mp4",
+    "caption": "094 空间坐标系的建立及坐标书写",
+    "duration": "00:29"
+  },
+  {
+    "filename": "095 法向量求解例题.mp4",
+    "caption": "095 法向量求解例题",
+    "duration": "00:29"
+  },
+  {
+    "filename": "096 线线垂直证明.mp4",
+    "caption": "096 线线垂直证明",
+    "duration": "00:43"
+  },
+  {
+    "filename": "097 向量法求线面角.mp4",
+    "caption": "097 向量法求线面角",
+    "duration": "00:26"
+  },
+  {
+    "filename": "098 向量法求二面角（两个平面夹角）.mp4",
+    "caption": "098 向量法求二面角（两个平面夹角）",
+    "duration": "00:52"
+  },
+  {
+    "filename": "099 多面体外接球问题之补形法.mp4",
+    "caption": "099 多面体外接球问题之补形法",
+    "duration": "00:33"
+  },
+  {
+    "filename": "100 多面外接球：公式直接应用（最值问题）.mp4",
+    "caption": "100 多面外接球：公式直接应用（最值问题）",
+    "duration": "00:11"
+  },
+  {
+    "filename": "101 多面外接球：直棱柱、线面垂直模型、正棱锥（台）.mp4",
+    "caption": "101 多面外接球：直棱柱、线面垂直模型、正棱锥（台）",
+    "duration": "00:34"
+  },
+  {
+    "filename": "102 多面体外接球面面垂直模型.mp4",
+    "caption": "102 多面体外接球面面垂直模型",
+    "duration": "00:17"
+  },
+  {
+    "filename": "103 多面体内切球问题.mp4",
+    "caption": "103 多面体内切球问题",
+    "duration": "00:19"
+  },
+  {
+    "filename": "104 排列数与组合数.mp4",
+    "caption": "104 排列数与组合数",
+    "duration": "00:32"
+  },
+  {
+    "filename": "105 排列组合元素（位置）分析法.mp4",
+    "caption": "105 排列组合元素（位置）分析法",
+    "duration": "00:21"
+  },
+  {
+    "filename": "106 排列组合捆绑法和插空法.mp4",
+    "caption": "106 排列组合捆绑法和插空法",
+    "duration": "00:16"
+  },
+  {
+    "filename": "107 排列组合分组和分配问题.mp4",
+    "caption": "107 排列组合分组和分配问题",
+    "duration": "00:25"
+  },
+  {
+    "filename": "108 二项式定理第一讲（a+b）n展开式.mp4",
+    "caption": "108 二项式定理第一讲（a+b）n展开式",
+    "duration": "00:23"
+  },
+  {
+    "filename": "109 二项式定理第二讲（a+b）（c+d）n展开式.mp4",
+    "caption": "109 二项式定理第二讲（a+b）（c+d）n展开式",
+    "duration": "00:41"
+  },
+  {
+    "filename": "110 二项式定理赋值法的应用.mp4",
+    "caption": "110 二项式定理赋值法的应用",
+    "duration": "00:26"
+  },
+  {
+    "filename": "111 线性回归方程.mp4",
+    "caption": "111 线性回归方程",
+    "duration": "00:32"
+  },
+  {
+    "filename": "112 百分位数.mp4",
+    "caption": "112 百分位数",
+    "duration": "00:23"
+  },
+  {
+    "filename": "113 平均数、中位数、众数、方差、极差的计算.mp4",
+    "caption": "113 平均数、中位数、众数、方差、极差的计算",
+    "duration": "00:50"
+  },
+  {
+    "filename": "114 频率分布直方图.mp4",
+    "caption": "114 频率分布直方图",
+    "duration": "01:00"
+  },
+  {
+    "filename": "115 独立性检验.mp4",
+    "caption": "115 独立性检验",
+    "duration": "00:36"
+  },
+  {
+    "filename": "116 二项分布.mp4",
+    "caption": "116 二项分布",
+    "duration": "00:49"
+  },
+  {
+    "filename": "117 超几何分布.mp4",
+    "caption": "117 超几何分布",
+    "duration": "00:32"
+  },
+  {
+    "filename": "118 正态分布.mp4",
+    "caption": "118 正态分布",
+    "duration": "00:19"
+  },
+  {
+    "filename": "119 直线方程.mp4",
+    "caption": "119 直线方程",
+    "duration": "01:01"
+  },
+  {
+    "filename": "120 圆的方程.mp4",
+    "caption": "120 圆的方程",
+    "duration": "00:17"
+  },
+  {
+    "filename": "121 直线和圆的位置关系.mp4",
+    "caption": "121 直线和圆的位置关系",
+    "duration": "00:45"
+  },
+  {
+    "filename": "122 椭圆方程.mp4",
+    "caption": "122 椭圆方程",
+    "duration": "00:49"
+  },
+  {
+    "filename": "123 双曲线第一讲.mp4",
+    "caption": "123 双曲线第一讲",
+    "duration": "00:50"
+  },
+  {
+    "filename": "124 双曲线例题补充.mp4",
+    "caption": "124 双曲线例题补充",
+    "duration": "00:09"
+  },
+  {
+    "filename": "125 抛物线.mp4",
+    "caption": "125 抛物线",
+    "duration": "00:55"
+  },
+  {
+    "filename": "126 圆锥曲线解答题模板.mp4",
+    "caption": "126 圆锥曲线解答题模板",
+    "duration": "00:38"
+  }
+]

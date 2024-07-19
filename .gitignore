@@ -42,4 +42,4 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 
-/public/videos
+/public/videos/**/*.mp4

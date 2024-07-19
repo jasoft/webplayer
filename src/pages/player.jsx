@@ -97,15 +97,12 @@ export default function SimpleVideoPlayer({ listname }) {
         //         setBlessing(response.data.response.choices[0].message.content)
         //     })
     }, [])
-
-    const handleVideoClick = (video) => {
-        if (video.url) setVideoSrc(video.url)
-        else {
-            setVideoSrc(path.join("/videos", listname, video.filename))
+    useEffect(() => {
+        if (currentVideo) {
             axios
                 .post("https://soj.myds.me:30100/message", {
                     recipient: "爸爸",
-                    message: "王子菡开始观看视频：" + video.caption,
+                    message: "王子菡开始观看视频：" + currentVideo.caption,
                 })
                 .then((response) => {
                     console.log("Help request sent successfully")
@@ -114,6 +111,13 @@ export default function SimpleVideoPlayer({ listname }) {
                     console.error("消息发送失败，请打电话", error)
                 })
         }
+    }, [currentVideo])
+    const handleVideoClick = (video) => {
+        if (video.url) setVideoSrc(video.url)
+        else {
+            setVideoSrc(path.join("/videos", listname, video.filename))
+        }
+
         setCurrentVideo(video)
         // 更新点击次数
         window.dataLayer.push({
