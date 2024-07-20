@@ -8,7 +8,7 @@
         "dev": "next dev -H 0.0.0.0",
         "lint": "next lint",
         "start": "next start",
-        "deploy": "ssh root@ds.home 'bash -l -c \"cd /volume1/docker/webplayer &&  ./deploy.sh\"'"
+        "deploy": "ssh root@docker.home 'bash -l -c \"cd /root/webplayer &&  ./deploy.sh\"'"
     },
     "dependencies": {
         "@t3-oss/env-nextjs": "^0.10.1",
@@ -21,6 +21,7 @@
         "next": "^14.2.1",
         "react": "^18.3.0",
         "react-dom": "^18.3.0",
+        "sweetalert2": "^11.12.3",
         "zod": "^3.23.3"
     },
     "devDependencies": {

@@ -5,7 +5,7 @@ import { PageTimeTracker } from "~/components/pagetime"
 import Link from "next/link"
 import Image from "next/image"
 import { formatDistanceToNow } from "date-fns"
-
+import Swal from "sweetalert2"
 import { zhCN } from "date-fns/locale"
 
 function BooksSection() {
@@ -30,19 +30,38 @@ function HelpSection() {
     const [resultMessage, setResultMessage] = useState("")
 
     const requestForHelp = () => {
-        axios
-            .post("https://soj.myds.me:30100/message", {
-                recipient: "爸爸",
-                message: "王子菡需要你的帮助！",
-            })
-            .then((response) => {
-                console.log("Help request sent successfully")
-                setResultMessage("消息已发送，爸爸会联系你的！")
-            })
-            .catch((error) => {
-                console.error("消息发送失败，请打电话", error)
-                setResultMessage("消息发送失败，请打电话")
-            })
+        Swal.fire({
+            title: "需要发送的消息",
+            input: "text",
+            inputLabel: "你的消息",
+            inputPlaceholder: "请输入你需要发送的消息",
+            showCancelButton: true,
+            confirmButtonText: "发送",
+            cancelButtonText: "取消",
+            preConfirm: (value) => {
+                // 检查输入是否为空
+                if (!value.trim()) {
+                    Swal.showValidationMessage("消息不能为空") // 显示错误消息并保持对话框打开
+                    return false // 阻止对话框关闭
+                }
+            },
+        }).then((result) => {
+            if (result.isConfirmed && result.value) {
+                axios
+                    .post("https://soj.myds.me:30100/message", {
+                        recipient: "爸爸",
+                        message: "985Player:" + result.value, // 使用用户输入的消息
+                    })
+                    .then((response) => {
+                        console.log("Help request sent successfully")
+                        setResultMessage("消息已发送，爸爸会联系你的！")
+                    })
+                    .catch((error) => {
+                        console.error("消息发送失败，请打电话", error)
+                        setResultMessage("消息发送失败，请打电话")
+                    })
+            }
+        })
     }
 
     return (
